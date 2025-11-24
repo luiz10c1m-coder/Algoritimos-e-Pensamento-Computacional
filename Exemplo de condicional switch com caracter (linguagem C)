@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    char cod;
+    printf ("Escolha entre A - B - c: ");
+    scanf ("%c", &cod);
+    switch (cod){
+        case 'A':
+        printf ("Amor");
+        break;
+        case 'B':
+        printf ("Beijo");
+        break;
+        case 'C':
+        printf ("Carinho");
+        break;
+        default:
+        printf ("Valor inválido");
+    }
+    return 0;
+}
