@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    // Declaração da variável para armazenar a média do aluno
+    float media = 0.0; 
+
+    // 1. Entrada de dados
+    printf("Digite a media final do aluno (0.0 a 10.0): ");
+    scanf("%f", &media);
+
+    printf("\n--- Resultado da Avaliacao ---\n");
+
+    // 2. Estrutura de Decisão (if, else if, else)
+    
+    // Condição 1: Verifica se a média é suficiente para APROVAÇÃO (>= 7.0)
+    if (media >= 7.0) {
+        printf("APROVADO! Parabens, voce atingiu a media.\n");
+    } 
+    
+    // Condição 2: Caso a primeira condição seja falsa, verifica se a média permite RECUPERAÇÃO (>= 5.0)
+    else if (media >= 5.0) {
+        printf("RECUPERACAO. Voce precisa fazer a prova final.\n");
+    } 
+    
+    // Condição 3: Se nenhuma das condições anteriores for verdadeira, o aluno é REPROVADO
+    else {
+        printf("REPROVADO. A media esta abaixo do necessario.\n");
+    }
+
+    printf("------------------------------\n");
+
+    return 0;
+}
